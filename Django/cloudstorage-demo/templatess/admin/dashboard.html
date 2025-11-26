@@ -1,0 +1,15 @@
+{% extends "jazzmin/dashboard.html" %}
+
+{% block dashboard_content %}
+    {{ block.super }}
+    <div class="card mb-3">
+        <div class="card-header">
+            Total Storage
+        </div>
+        <div class="card-body">
+            {% with total_size=total_storage_mb %}
+                <h4>{{ total_size|floatformat:2 }} MB</h4>
+            {% endwith %}
+        </div>
+    </div>
+{% endblock %}

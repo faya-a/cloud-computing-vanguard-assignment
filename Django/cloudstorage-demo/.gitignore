@@ -1,0 +1,7 @@
+files/
+db.sqlite3
+migrations
+__pycache__
+# .env
+*.pyc
+.ruff_cache
